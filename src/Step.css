@@ -1,0 +1,28 @@
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.number {
+  border: 1px solid white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.step-details {
+}
+
+.faint {
+  font-size: 12px;
+  color: gray;
+}
+
+.step-name {
+}

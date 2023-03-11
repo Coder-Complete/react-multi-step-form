@@ -1,0 +1,7 @@
+.page {
+  display: flex;
+  border-radius: 12px;
+  background-color: white;
+  padding: 15px;
+  /* height: 400px; */
+}
