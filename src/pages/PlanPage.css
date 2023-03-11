@@ -1,0 +1,93 @@
+.plan-page__options {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.plan-page__options label {
+  border: 1px solid var(--dark-purple);
+  flex: 1 1 0px;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.plan-page__switch-container {
+  margin-top: 20px;
+  border-radius: 6px;
+  background-color: #f8f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.plan-page__switch-container span {
+  font-size: 12px;
+}
+
+.plan-page__switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  margin: 0px 10px;
+}
+
+/* Hide default HTML checkbox */
+.plan-page__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.plan-page__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.plan-page__slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .plan-page__slider {
+  background-color: #052957;
+}
+
+input:focus + .plan-page__slider {
+  box-shadow: 0 0 1px #052957;
+}
+
+input:checked + .plan-page__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.plan-page__slider {
+  border-radius: 34px;
+}
+
+.plan-page__button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

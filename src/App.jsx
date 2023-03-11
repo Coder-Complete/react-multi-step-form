@@ -1,14 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import React from "react";
 import "./App.css";
-import Page from "./Page";
+import MultiPageForm from "./MultiPageForm";
 
 function App() {
-  const [page, setPage] = useState(1);
-
   return (
     <div className="App">
-      <Page whichPage={page} setPage={setPage} />
+      <MultiPageForm />
     </div>
   );
 }

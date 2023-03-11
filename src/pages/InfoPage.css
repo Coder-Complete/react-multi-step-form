@@ -1,0 +1,26 @@
+.info-page div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-page label {
+  /* margin-bottom: 8px; */
+  font-size: 14px;
+}
+
+.info-page input {
+  /* margin-bottom: 20px; */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.info-page button {
+  align-self: flex-end;
+  justify-self: flex-end;
+  background-color: var(blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}

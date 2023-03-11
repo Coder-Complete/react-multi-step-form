@@ -1,0 +1,26 @@
+.summary-page div {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-page label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.summary-page input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.summary-page button {
+  align-self: flex-end;
+  justify-self: flex-end;
+  background-color: var(blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
