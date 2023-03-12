@@ -27,7 +27,7 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
           <label htmlFor={id + "-plan-arcade"}>
             <img src={arcade} alt="" />
             <p>Arcade</p>
-            <p>{formFields.monthlyOrYearly ? "$90/yr" : "$9/mo"}</p>
+            <p>{formFields.yearly ? "$90/yr" : "$9/mo"}</p>
             <input
               id={id + "-plan-arcade"}
               type="radio"
@@ -40,7 +40,7 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
           <label htmlFor={id + "-plan-advanced"}>
             <img src={advanced} alt="" />
             <p>Advanced</p>
-            <p>{formFields.monthlyOrYearly ? "$120/yr" : "$12/mo"}</p>
+            <p>{formFields.yearly ? "$120/yr" : "$12/mo"}</p>
             <input
               id={id + "-plan-advanced"}
               type="radio"
@@ -54,7 +54,7 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
           <label htmlFor={id + "-plan-pro"}>
             <img src={pro} alt="" />
             <p>Pro</p>
-            <p>{formFields.monthlyOrYearly ? "$150/yr" : "$15/mo"}</p>
+            <p>{formFields.yearly ? "$150/yr" : "$15/mo"}</p>
             <input
               id={id + "-plan-pro"}
               type="radio"
@@ -70,9 +70,9 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
           <label className="plan-page__switch">
             <input
               type="checkbox"
-              name="monthlyOrYearly"
+              name="yearly"
               onChange={handleChange}
-              checked={formFields.monthlyOrYearly}
+              checked={formFields.yearly}
             />
             <span className="plan-page__slider"></span>
           </label>

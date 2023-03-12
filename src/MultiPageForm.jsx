@@ -15,8 +15,10 @@ function MultiPageForm() {
     email: "",
     phone: "",
     plan: "",
-    monthlyOrYearly: "",
-    addOns: [],
+    yearly: false,
+    onlineService: false,
+    largerStorage: false,
+    customizableProfile: false,
   });
 
   function nextPage() {

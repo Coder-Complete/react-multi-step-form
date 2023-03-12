@@ -1,61 +1,18 @@
-import React, { useId } from "react";
+import React from "react";
 import "./ConfirmationPage.css";
+import thankYouIcon from "../assets/icon-thank-you.svg";
 
-function ConfirmationPage({ formFields, handleChange, nextPage }) {
-  const id = useId();
-
-  function validate() {
-    return true;
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (validate()) {
-      nextPage();
-    } else {
-      console.log("not validated");
-    }
-  }
-
+function ConfirmationPage() {
   return (
-    <form
-      className="main-section__form confirmation-page"
-      onSubmit={handleSubmit}
-    >
-      <div>
-        <label htmlFor={id + "-name"} name={id + "-name"}>
-          Name
-        </label>
-        <input
-          id={id + "-name"}
-          name="name"
-          type="text"
-          onChange={handleChange}
-          value={formFields.name}
-        />
-        <label htmlFor={id + "-email"} name={id + "-email"}>
-          Email Address
-        </label>
-        <input
-          id={id + "-email"}
-          name="email"
-          type="email"
-          onChange={handleChange}
-          value={formFields.email}
-        />
-        <label htmlFor={id + "-phone"} name={id + "-phone"}>
-          Phone Number
-        </label>
-        <input
-          id={id + "-phone"}
-          name="phone"
-          type="phone"
-          onChange={handleChange}
-          value={formFields.phone}
-        />
-      </div>
-      <button type="submit">Next Step</button>
-    </form>
+    <div className="main-section__form confirmation-page">
+      <img src={thankYouIcon} alt="" />
+      <h2 className="blue">Thank You!</h2>
+      <p>
+        Thanks for confirming your subscription! We hope you have fun using our
+        platform. If you ever need support, please feel free to email us at
+        support@loremgaming.com.
+      </p>
+    </div>
   );
 }
 

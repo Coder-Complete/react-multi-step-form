@@ -1,14 +1,36 @@
-.addons-page div {
+.addons-page__options {
   display: flex;
   flex-direction: column;
 }
 
 .addons-page label {
+  padding: 15px;
+  margin-bottom: 10px;
   border: 1px solid var(--dark-purple);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.addons-page label input {
+  margin-right: 15px;
+}
+
+.addons-page input:checked {
+  accent-color: var(--purple);
+}
+
+.addons-page label div {
+  flex: 1;
+}
+
+.addons-page .blue {
+  font-weight: 600;
 }
 
 .addons-page__button-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }

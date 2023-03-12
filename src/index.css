@@ -19,3 +19,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+p,
+span,
+button {
+  font-size: 12px;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.purple {
+  color: var(--purple);
+}
