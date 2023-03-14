@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import MultiPageForm from "./MultiPageForm";
+import MultiStepForm from "./MultiStepForm";
 
 function App() {
   return (
     <div className="App">
-      <MultiPageForm />
+      <MultiStepForm />
     </div>
   );
 }

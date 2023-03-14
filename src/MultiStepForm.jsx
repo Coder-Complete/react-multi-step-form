@@ -5,10 +5,10 @@ import AddOnsPage from "./pages/AddOnsPage";
 import ConfirmationPage from "./pages/ConfirmationPage";
 import LeftSide from "./LeftSide";
 import MainSection from "./MainSection";
-import "./MultiPageForm.css";
+import "./MultiStepForm.css";
 import SummaryPage from "./pages/SummaryPage";
 
-function MultiPageForm() {
+function MultiStepForm() {
   const [pageNumber, setPageNumber] = useState(1);
   const [formFields, setFormFields] = useState({
     name: "",
@@ -110,4 +110,4 @@ function MultiPageForm() {
   );
 }
 
-export default MultiPageForm;
+export default MultiStepForm;
