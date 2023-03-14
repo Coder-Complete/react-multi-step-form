@@ -6,7 +6,7 @@
 .addons-page label {
   padding: 15px;
   margin-bottom: 10px;
-  border: 1px solid var(--dark-purple);
+  border: 1px solid lightgray;
   border-radius: 5px;
   display: flex;
   align-items: center;
