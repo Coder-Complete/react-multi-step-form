@@ -14,7 +14,7 @@ function MultiStepForm() {
     name: "",
     email: "",
     phone: "",
-    plan: "arcade",
+    plan: "Arcade",
     yearly: false,
     onlineService: false,
     largerStorage: false,
@@ -88,7 +88,14 @@ function MultiStepForm() {
           />
         );
       case 4:
-        return <SummaryPage nextPage={nextPage} prevPage={prevPage} />;
+        return (
+          <SummaryPage
+            formFields={formFields}
+            nextPage={nextPage}
+            prevPage={prevPage}
+            setPageNumber={setPageNumber}
+          />
+        );
       case 5:
         return <ConfirmationPage />;
       default:

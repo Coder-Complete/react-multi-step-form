@@ -29,6 +29,7 @@
   background-color: transparent;
   border: none;
   font-size: 10px;
+  text-decoration: underline;
 }
 
 .summary-page__content--addons div {

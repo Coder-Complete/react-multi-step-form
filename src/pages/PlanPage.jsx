@@ -24,7 +24,7 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
         <div className="plan-page__options">
           <label
             style={
-              formFields.plan === "arcade"
+              formFields.plan === "Arcade"
                 ? {
                     border: "1px solid var(--dark-purple)",
                     backgroundColor: "var(--selected-background)",
@@ -39,14 +39,14 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
             <input
               type="radio"
               name="plan"
-              value="arcade"
+              value="Arcade"
               onChange={handleChange}
-              checked={formFields.plan === "arcade"}
+              checked={formFields.plan === "Arcade"}
             />
           </label>
           <label
             style={
-              formFields.plan === "advanced"
+              formFields.plan === "Advanced"
                 ? {
                     border: "1px solid var(--dark-purple)",
                     backgroundColor: "var(--selected-background)",
@@ -61,15 +61,15 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
             <input
               type="radio"
               name="plan"
-              value="advanced"
+              value="Advanced"
               onChange={handleChange}
-              checked={formFields.plan === "advanced"}
+              checked={formFields.plan === "Advanced"}
             />
           </label>
 
           <label
             style={
-              formFields.plan === "pro"
+              formFields.plan === "Pro"
                 ? {
                     border: "1px solid var(--dark-purple)",
                     backgroundColor: "var(--selected-background)",
@@ -84,9 +84,9 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
             <input
               type="radio"
               name="plan"
-              value="pro"
+              value="Pro"
               onChange={handleChange}
-              checked={formFields.plan === "pro"}
+              checked={formFields.plan === "Pro"}
             />
           </label>
         </div>

@@ -1,2 +1,2 @@
-Formik for easier form-making?
- - try refactor at end
+- try infopage form with Formik
+- refactor at end maybe
