@@ -5,7 +5,7 @@
 }
 
 .plan-page__options label {
-  border: 1px solid var(--dark-purple);
+  border: 1px solid lightgray;
   flex: 1 1 0px;
   width: 0;
   display: flex;
@@ -14,6 +14,34 @@
   border-radius: 12px;
   padding: 10px;
 }
+
+.plan-page__options input {
+  appearance: none;
+}
+
+.plan-page__options img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.plan-page__options b {
+  font-size: 12px;
+}
+
+.plan-page__options p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.plan-page__options label:hover {
+  border: 1px solid var(--dark-purple);
+}
+
+/* 
+  all switch stuff copied and from stackoverflow 
+  and slightly modified 
+*/
 
 .plan-page__switch-container {
   margin-top: 20px;
@@ -44,7 +72,7 @@
   height: 0;
 }
 
-/* The slider */
+/* The sliderå */
 .plan-page__slider {
   position: absolute;
   cursor: pointer;
@@ -68,15 +96,15 @@
   border-radius: 50%;
 }
 
-input:checked + .plan-page__slider {
+.plan-page input:checked + .plan-page__slider {
   background-color: #052957;
 }
 
-input:focus + .plan-page__slider {
+.plan-page input:focus + .plan-page__slider {
   box-shadow: 0 0 1px #052957;
 }
 
-input:checked + .plan-page__slider:before {
+.plan-page input:checked + .plan-page__slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(13px);
   transform: translateX(13px);

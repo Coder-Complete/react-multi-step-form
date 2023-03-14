@@ -15,6 +15,7 @@
   padding: 8px;
   border-radius: 5px;
   border: 1px solid lightgray;
+  outline: none;
 }
 
 .info-page input:focus {

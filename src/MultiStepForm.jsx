@@ -14,7 +14,7 @@ function MultiStepForm() {
     name: "",
     email: "",
     phone: "",
-    plan: "",
+    plan: "arcade",
     yearly: false,
     onlineService: false,
     largerStorage: false,

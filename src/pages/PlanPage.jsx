@@ -1,12 +1,10 @@
-import React, { useId } from "react";
+import React from "react";
 import "./PlanPage.css";
 import arcade from "../assets/icon-arcade.svg";
 import advanced from "../assets/icon-advanced.svg";
 import pro from "../assets/icon-pro.svg";
 
 function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
-  const id = useId();
-
   function validate() {
     return true;
   }
@@ -24,12 +22,21 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
     <form className="main-section__form plan-page" onSubmit={handleSubmit}>
       <div>
         <div className="plan-page__options">
-          <label htmlFor={id + "-plan-arcade"}>
+          <label
+            style={
+              formFields.plan === "arcade"
+                ? {
+                    border: "1px solid var(--dark-purple)",
+                    backgroundColor: "var(--selected-background)",
+                  }
+                : {}
+            }
+          >
             <img src={arcade} alt="" />
-            <p>Arcade</p>
+            <b className="blue">Arcade</b>
             <p>{formFields.yearly ? "$90/yr" : "$9/mo"}</p>
+            {formFields.yearly && <p className="blue">2 months free</p>}
             <input
-              id={id + "-plan-arcade"}
               type="radio"
               name="plan"
               value="arcade"
@@ -37,12 +44,21 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
               checked={formFields.plan === "arcade"}
             />
           </label>
-          <label htmlFor={id + "-plan-advanced"}>
+          <label
+            style={
+              formFields.plan === "advanced"
+                ? {
+                    border: "1px solid var(--dark-purple)",
+                    backgroundColor: "var(--selected-background)",
+                  }
+                : {}
+            }
+          >
             <img src={advanced} alt="" />
-            <p>Advanced</p>
+            <b className="blue">Advanced</b>
             <p>{formFields.yearly ? "$120/yr" : "$12/mo"}</p>
+            {formFields.yearly && <p className="blue">2 months free</p>}
             <input
-              id={id + "-plan-advanced"}
               type="radio"
               name="plan"
               value="advanced"
@@ -51,12 +67,21 @@ function PlanPage({ formFields, handleChange, nextPage, prevPage }) {
             />
           </label>
 
-          <label htmlFor={id + "-plan-pro"}>
+          <label
+            style={
+              formFields.plan === "pro"
+                ? {
+                    border: "1px solid var(--dark-purple)",
+                    backgroundColor: "var(--selected-background)",
+                  }
+                : {}
+            }
+          >
             <img src={pro} alt="" />
-            <p>Pro</p>
+            <b className="blue">Pro</b>
             <p>{formFields.yearly ? "$150/yr" : "$15/mo"}</p>
+            {formFields.yearly && <p className="blue">2 months free</p>}
             <input
-              id={id + "-plan-pro"}
               type="radio"
               name="plan"
               value="pro"
